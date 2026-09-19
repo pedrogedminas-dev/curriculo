@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  background-color: #f4f1ec;
+  color: #23272a;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-style: oblique;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#cabecalho {
+  background-color: #23272a;
+  color: #f4f1ec;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+#nome {
+  text-decoration: underline;
+  text-decoration-color: #d4af37;
+  text-underline-offset: 6px;
+}
+
+#resumo {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+#contato-form {
+  max-width: 700px;
+  margin: 2rem auto 3rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.foto-perfil img {
+  border-radius: 50%;
+  border: 3px solid #d4af37;
+}
+
+.foto-perfil figcaption {
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #d4af37;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.link-contato {
+  color: #f4f1ec;
+  text-decoration: none;
+}
+
+.destaque {
+  background-color: #d4af37;
+  color: #23272a;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+a[target="_blank"]::after {
+  content: " ↗";
+}
+
+input[type="url"] {
+  border: 1px solid #d4af37;
+}
+
+a:hover {
+  color: #d4af37;
+}
+
+.destaque:hover {
+  background-color: #23272a;
+  color: #f4f1ec;
+}
+
+li:nth-child(odd) {
+  opacity: 0.95;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #23272a;
+  color: #f4f1ec;
+  font-size: 0.85rem;
+}

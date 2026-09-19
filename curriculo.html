@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo - Pedro Henrique Romano Gedminas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="cabecalho">
+    <h1 id="nome">Pedro Henrique Romano Gedminas</h1>
+
+    <figure class="foto-perfil">
+      <img src="foto-minha.webp" alt="Foto de perfil de Pedro" width="200">
+      <figcaption>Estudante de Engenharia de Software</figcaption>
+    </figure>
+
+    <ul class="contatos">
+      <li>
+        <img src="email.png" alt="Ícone de e-mail" width="20" height="20">
+        <a class="link-contato" href="mailto:pedrogedminas@alunos.utfpr.edu.br">pedrogedminas@alunos.utfpr.edu.br</a>
+      </li>
+      <li>
+        <img src="linkedin.jpg" alt="Ícone do LinkedIn" width="20" height="20">
+        <a class="link-contato" href="https://linkedin.com/in/pedro" target="_blank" rel="noopener">linkedin.com/in/pedro</a>
+      </li>
+      <li>
+        <img src="maps.png" alt="Ícone de localização" width="20" height="20">
+        <span>Cornélio Procópio, Paraná, Brasil</span>
+      </li>
+    </ul>
+  </header>
+
+  <section id="resumo">
+    <h2>Resumo</h2>
+    <p>
+      Cursando a Engenharia de Software na UTF-PR (Universidade Tecnológica Federal do Paraná).
+      <br>
+      Tenho 1,93 de altura.
+      <br>
+      Tenho uma XRE300 2011 (Ótimo piloto).
+    </p>
+  </section>
+
+  <section id="contato-form">
+    <h2>Fale comigo</h2>
+
+    <button id="btn-contato" class="destaque" onclick="document.getElementById('modalContato').showModal()">
+      Enviar informações de contato
+    </button>
+
+    <dialog id="modalContato">
+      <form method="dialog">
+        <label for="nomeContato">Nome Completo:</label><br>
+        <input type="text" id="nomeContato" name="nomeContato"><br><br>
+
+        <label for="instagram">Link para o Instagram:</label><br>
+        <input type="url" id="instagram" name="instagram"><br><br>
+
+        <label for="whatsapp">Número do WhatsApp:</label><br>
+        <input type="tel" id="whatsapp" name="whatsapp"><br><br>
+
+        <button type="submit" class="destaque">Enviar</button>
+        <button type="button" onclick="document.getElementById('modalContato').close()">Fechar</button>
+      </form>
+    </dialog>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Pedro Henrique Romano Gedminas</p>
+  </footer>
+
+</body>
+</html>
